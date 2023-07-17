@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+<body>
+    <div>
+        <h2 id="text">Be
+            <span style="display: initial;">Creative</span>
+            <span>Amazing</span>
+            <span>Fantastic</span>
+            <span>Awesome</span>
+            <span>Beautiful</span>
+            <span>Charming</span>
+
+        </h2>
+    </div>
+    <script type="text/javascript">
+        var text= document.getElementById('text');
+        var word= text.getElementsByTagName('span');
+        var i=0;
+
+        function rotator()
+        {
+            word[i].style.display='none';
+            i=(i+1) % word.length;
+            word[i].style.display='initial';
+        }
+        setInterval(rotator,800);
+
+    </script>
+
+
+</body>
+</html>
+
